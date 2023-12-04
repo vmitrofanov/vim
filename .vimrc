@@ -21,6 +21,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'universal-ctags/ctags'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
+Plug 'preservim/tagbar'
 call plug#end()
 
 "OTHER"
@@ -259,3 +260,6 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 
 " Nerd commenter"
 let g:NERDCustomDelimiters = { 'c': { 'left': '//' } }
+
+"TAGBAR"
+nmap <C-b> :TagbarToggle<CR>
