@@ -22,6 +22,7 @@ Plug 'universal-ctags/ctags'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/tagbar'
+Plug 'zivyangll/git-blame.vim'
 call plug#end()
 
 "OTHER"
@@ -263,3 +264,7 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '//' } }
 
 "TAGBAR"
 nmap <C-b> :TagbarToggle<CR>
+
+"GITBLAME"
+nmap <C-g> :<C-u>call gitblame#echo()<CR>
+
